@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA Dreamer- Venta de mobiliarios</title>
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/145d01cfea.js" crossorigin="anonymous"></script>
+
+    <!--Color palette: https://colorhunt.co/palette/fefaf6eadbc8dac0a3102c57-->
+</head>
+
+<body>
+    <div id="content">
+        
+
+        <div class="contact-buttons">
+            <a><img class="whatsapp-icon" onclick="openNewTab()" src="img/whatsapp-icon.png"></a>
+            <a href="#topofall"><img class="up-icon" src="img/216362-200.png"></a>
+            <a href="#topofall"><img class="up-icon-hover" src="img/216362-200-hover.png"></a>
+        </div>
+        <div class="navbarhead" id="topofall">
+            <a href="./index.html">
+                <img class="logo-header" src="img/logo-header.png">
+            </a>
+            <ul class="menu-list">
+                <li class="menu-head"><a href="./products.html">PRODUCTOS</a></li>
+                <li class="menu-head">PROYECTOS</li>
+                <li class="menu-head">CATEGORÍAS</li>
+                <li class="menu-head">CONTACTO</li>
+            </ul>
+            <div id="dynamic-searchbar">
+                <!--Barra de búsqueda dinámica-->
+               </div>
+            <div class="search-bar-box" onclick="focusNavBar()">
+               <a href="./products.html"> <i id="lupa" class="fa-solid fa-magnifying-glass" ></i> </a>
+             
+            </div>
+
+    
+        </div>
+        <!--Carrusel Inicio-->
+        <div class="container-carousel">
+            <div class="carrusel-caja">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="carruselinner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img class="img-carrusel" src="./img/living-1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Etiqueta 1</h5>
+                                <p class="carousel-text-info">Aqui, podemos colocar información representativa a la
+                                    empresa o promociones al día
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img class="img-carrusel" src="./img/living-2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block" id="carousel-label-info">
+                                <h5>Etiqueta 2</h5>
+                                <p class="carousel-text-info">Aqui, podemos colocar información representativa a la
+                                    empresa o promociones al día.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-carrusel" src="./img/living-3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Etiqueta 3</h5>
+                                <p class="carousel-text-info">Aqui, podemos colocar información representativa a la
+                                    empresa o promociones al día
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mini-boxes">
+            <div class="mbox1"><img class="mboximg"
+                    src="https://hips.hearstapps.com/hmg-prod/images/0-muebles-aw23-boconcept-64ddfd9de88d2.jpg?crop=0.746xw:1.00xh;0.254xw,0&resize=640:*">
+            </div>
+            <div class="mbox1"><img class="mboximg"
+                    src="https://static.wixstatic.com/media/b49988_aec432a640814eb7a331a2fd9f3f12a1~mv2.jpeg/v1/fill/w_895,h_600,al_c,q_85,enc_auto/b49988_aec432a640814eb7a331a2fd9f3f12a1~mv2.jpeg">
+            </div>
+            <div class="mbox1"><img class="mboximg"
+                    src="https://lablanqueria.cl/cdn/shop/products/Respaldo_IMG_3830_621e7015-8793-45e7-994f-850136050a2e.jpg?v=1615294392&width=1445">
+            </div>
+            <div class="mbox1"><img class="mboximg" src="https://brunettihome.cl/wp-content/uploads/Unknown-3-21.jpeg">
+            </div>
+        </div>
+
+        <div id="dynamic-content">
+            
+            <!-- Aquí se cargará el contenido dinámico -->
+        </div>
+
+        <div class="about-me-box">
+            <div class="aboutme-text">
+                <p id="text-aboutme">En esta sección debemos colocar información correspondiente al servicio que ofrece
+                    la empresa, se puede añadir un apartado donde se informe los plazos de entrega, las características
+                    que diferencian a la marca en cuanto al resto en el mercado y valores agregados.</p>
+            </div>
+            <div class="aboutme-media">
+                <img class="aboutme-img"
+                    src="https://media.admagazine.com/photos/648cd919d6ffbb9c781e28c0/3:2/w_1685,h_1123,c_limit/renovar-los-muebles-sala.jpg">
+            </div>
+        </div>
+        <div class="footer-box" id="footer-boxing">
+            <div class="mapa-box">
+                <h1>Contáctanos:</h1>
+                <p>+56 999 99 99</p>
+                <p>mail@gmail.com</p>
+                <p>dirección #9999-San Miguel- Santiago</p>
+                <h1>Redes sociales:</h1>
+            </div>
+            <div class="mapa-box">
+                <h1>Servicio al cliente:</h1>
+                <p>Política de privacidad</p>
+                <p>Política de garantía</p>
+                <p>Devolucion y reembolso</p>
+                <p>Consulte por su boleta</p>
+                <p>Promociones</p>
+            </div>
+            <div class="mapa-box" id="mdp-box">
+                <h1>Medios de Pago:</h1>
+                <img class="img-mdp" src="https://www.asesora2.cl/servicios/91-large_default/integrar-webpay-plus.jpg"/>
+            </div>
+            <div class="mapa-container">
+                <img id="logo-footer" src="./img/logo-footer.png">
+            </div>
+        </div>
+    </div>
+
+    <!--Source JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/display.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script  src="js/main.js"></script>
+    <script src="js/loader.js"></script>
+    <!--Source JS-->
+</body>
+
+</html>

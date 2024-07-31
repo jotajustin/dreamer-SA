@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA Dreamer- Venta de mobiliarios</title>
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/145d01cfea.js" crossorigin="anonymous"></script>
+
+    <!--Color palette: https://colorhunt.co/palette/fefaf6eadbc8dac0a3102c57-->
+</head>
+
+<body>
+
+    <div id="content" class="content">
+
+        <div class="contact-buttons">
+            <a><img class="whatsapp-icon" onclick="openNewTab()" src="img/whatsapp-icon.png"></a>
+            <a href="#topofall"><img class="up-icon" src="img/216362-200.png"></a>
+            <a href="#topofall"><img class="up-icon-hover" src="img/216362-200-hover.png"></a>
+        </div>
+        <div class="navbarhead" id="topofall">
+            <a href="./index.html">
+                <img class="logo-header" src="img/logo-header.png">
+            </a>
+            <ul class="menu-list">
+                <li class="menu-head"><a href="./products.html">PRODUCTOS</a></li>
+                <li class="menu-head">PROYECTOS</li>
+                <li class="menu-head">CATEGORÍAS</li>
+                <li class="menu-head">CONTACTO</li>
+            </ul>
+        </div>
+        <!--Aqui termina el navbar y comienza la caja de búsqueda-->
+        <div class="searchbox">
+            <input id="searchbar-box" placeholder="buscar..."></input>
+            <div id="results"></div>
+        </div>
+
+
+
+        <div id="cajaResult">
+
+            <!--Caja de filtrado de info-->
+
+            <div class="filters-box">
+
+
+
+                <div class="filters-box">
+                    <img src="./img/ad-filter-box.png" />
+                </div>
+
+              
+
+            </div>
+            <div class="results-count">
+                <p id="resultadoElement">  </p>
+
+            </div>
+
+
+            <div class="product-container-box" id="product-container">
+
+              
+                <!--Agregar productos dentro de esta sección-->
+
+                <div class="boxflex-1-pp" data-id="1"
+                    data-name="sillón sillon sofa marron sofa marron sofa 3 plazas sofa grande sofá 3 cuerpos sofá 3 cuerpos"
+                    data-price="159.990"><a href="./product-detail.html">
+                        <img class="boxflex-img" onmouseover="this.src='img/product/sofa-A.png';"
+                            onmouseout="this.src='img/product/sofa.png';" src="./img/product/sofa.png" /></a>
+                    <p class="productname-boxflex">Sofá Brown</p>
+                    <p class="productprice-boxflex"><strong>$ 159.990</strong></p>
+                </div>
+
+                <div class="boxflex-1-pp" data-id="2"
+                    data-name="Respaldo Luxury,ecocuero, capitoné, capitone, gris, respaldo 2 plazas, respaldo grande"
+                    data-price="89.990">
+                    <a href="./product-detail.html"> <img class="boxflex-img" onmouseover="this.src='img/product/ecocuero 1-A.png';"
+                        onmouseout="this.src='img/product/ecocuero 1.png';" src="./img/product/ecocuero 1.png" /></a>
+                    <p class="productname-boxflex">Respaldo Ecocuero</p>
+                    <p class="productprice-boxflex"><strong>$ 89.990</strong></p>
+                </div>
+
+
+                <div class="boxflex-1-pp" data-id="3"
+                    data-name="respaldo, lino, respaldo lino, respaldo capitoné, capitone,capitoné , respaldo gris, respaldo 2 plazas, respaldo grande"
+                    data-price="89.990">
+                    <img class="boxflex-img" onmouseover="this.src='img/product/lino 1-A.png';"
+                        onmouseout="this.src='img/product/lino 1.png';" src="./img/product/lino 1.png" />
+                    <p class="productname-boxflex">Respaldo Capitoné</p>
+                    <p class="productprice-boxflex"><strong>$ 89.990</strong></p>
+                </div>
+
+                <div class="boxflex-1-pp" data-id="4"
+                    data-name="respaldo, lino, respaldo lino, respaldo capitoné, capitone,capitoné , respaldo gris, respaldo 2 plazas, respaldo grande"
+                    data-price="89.990">
+                    <img class="boxflex-img" onmouseover="this.src='img/product/lino 2-A.png';"
+                        onmouseout="this.src='img/product/lino 2.png';" src="./img/product/lino 2.png" />
+                    <p class="productname-boxflex">Respaldo Capitoné</p>
+                    <p class="productprice-boxflex"><strong>$ 89.990</strong></p>
+                </div>
+
+                <div class="boxflex-1-pp" data-id="5"
+                    data-name="respaldo, lino,respaldo modular, respaldo modulos, respaldo gris, respaldo 2 plazas, respaldo grande"
+                    data-price="89.990">
+                    <img class="boxflex-img" onmouseover="this.src='img/product/lino 3-B.png';"
+                        onmouseout="this.src='img/product/lino 3.png';" src="./img/product/lino 3.png" />
+                    <p class="productname-boxflex">Respaldo Módulos</p>
+                    <p class="productprice-boxflex"><strong>$ 89.990</strong></p>
+                </div>
+
+                <div class="boxflex-1-pp" data-id="5"
+                    data-name="respaldo, lino,respaldo modular, respaldo modulos, respaldo gris, respaldo 2 plazas, respaldo grande"
+                    data-price="89.990">
+                    <img class="boxflex-img" onmouseover="this.src='img/product/terciopelo 1-A.png';"
+                        onmouseout="this.src='img/product/terciopelo 1.png';" src="./img/product/terciopelo 1.png" />
+                    <p class="productname-boxflex">Respaldo Módulos</p>
+                    <p class="productprice-boxflex"><strong>$ 89.990</strong></p>
+                </div>
+
+                <div class="boxflex-1-pp" data-id="5"
+                    data-name="respaldo, lino,respaldo modular, respaldo modulos, respaldo gris, respaldo 2 plazas, respaldo grande"
+                    data-price="89.990">
+                    <img class="boxflex-img" onmouseover="this.src='img/product/terciopelo 2-A.png';"
+                        onmouseout="this.src='img/product/terciopelo 2.png';" src="./img/product/terciopelo 2.png" />
+                    <p class="productname-boxflex">Respaldo Módulos</p>
+                    <p class="productprice-boxflex"><strong>$ 89.990</strong></p>
+                </div>
+
+
+
+
+
+                <div id="loading-search">Cargando...</div>
+                <div id="no-results">
+                    <img src="./img/6134116.png" width="400px">
+                    <p><strong>No encontramos elementos relacionados con tu búsqueda.</strong></p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-box-sections" id="footer-boxing">
+            <div class="mapa-box">
+                <h1>Contáctanos:</h1>
+                <p>+56 999 99 99</p>
+                <p>mail@gmail.com</p>
+                <p>dirección #9999-San Miguel- Santiago</p>
+                <h1>Redes sociales:</h1>
+            </div>
+            <div class="mapa-box">
+                <h1>Servicio al cliente:</h1>
+                <p>Política de privacidad</p>
+                <p>Política de garantía</p>
+                <p>Devolucion y reembolso</p>
+                <p>Consulte por su boleta</p>
+                <p>Promociones</p>
+            </div>
+            <div class="mapa-box" id="mdp-box">
+                <h1>Medios de Pago:</h1>
+                <img class="img-mdp"
+                    src="https://www.asesora2.cl/servicios/91-large_default/integrar-webpay-plus.jpg" />
+            </div>
+            <div class="mapa-container">
+                <img id="logo-footer" src="./img/logo-footer.png">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Source JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/display.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/order.js"></script>
+
+    <!--Source JS-->
+</body>
+
+</html>
